@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="chief-slider.min.css">
+    <script defer src="chief-slider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+        $(".five li ul").hide();
+        $(".five li:has('.submenu')").hover(
+            function(){
+                $(".five li ul").stop().fadeToggle(300);}
+        );
+    </script>
+</head>
+<header class="header">
+    <div class="menu-burger__header">
+        <span></span>
+    </div>
+    <a href="index.html"><img src="images/Logo.png" class="photo1"></a>
+    <div class="btns">
+        <nav class="three">
+            <ul class="topmenu">
+                <li><a href="" class="btn1">КАТАЛОГ<i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="catalog1.html">Аксессуары для рыбалки</a></li>
+                        <li><a href="catalog2.html">Лодки и моторы</a></li>
+                        <li><a href="catalog3.html">Удилища</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="btn2">НОВИНКИ</a></li>
+                <li><a href="basket.html" class="btn3">КОРЗИНА</a></li>
+    </div>
+    <div class="but">
+        <a href="sign.html" class="glow-button">Войти</a>
+        <p class="ili">или</p>
+        <a href="register.html" class="glow-button">Зарегистрироваться</a>
+    </div>
+</header>
+<body>
+    <div class="block1">
+        <section class="inf">
+            <p class="text3"> О НАС <br>
+                Магазин “Речка” – это не только рыболовный интернет-магазин, это крупный портал для общения, обмена опытом. Вы можете задать вопрос эксперту, посоветоваться с другими рыболовами, посмотреть обзоры снастей и поделиться успехами в своем блоге.<br>
+                Структура каталога позволяет быстро подобрать интересующие товары. Удобный интерфейс и интуитивно понятное управление помогут быстро узнать всё о выбранном товаре, а если вопросы всё-таки останутся, то вам всегда поможет наш онлайн-консультант.<br>
+                Приятных покупок!
+            </p>
+        </section>
+        <div class="banban">
+            <section class="ban">
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item" style="background-image: url('images/banner1.JPG')">
+
+                                </div>
+                                <div class="slider__item" style="background-image: url('images/banner2.jpg')">
+
+                                </div>
+                                <div class="slider__item " style="background-image: url('images/banner3.jpg')">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="block2">
+        <b class="br">БРЕНДЫ</b>
+        <div class="photos">
+            <section><img src="images/zetrix.png" alt="" class="scale"></section>
+            <section><img src="images/DECOY.jpg" alt="" class="scale"></section>
+            <section><img src="images/forest.jpg" alt="" class="scale"></section>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <section class=text44>
+        <p class="text4">ПРИСОЕДИНЯЙТЕСЬ К НАМ УЖЕ СЕГОДНЯ</p>
+    </section>
+    <section class="login">
+        <form action="/action_page.php">
+            <div class="container">
+                <button type="submit" class="button111">
+                    <img src="images/googleicon.png" class="googleicon"> <b class="bold">Войти с помощью Google</b>
+                </button>
+                <label for="uname">
+                    <p><b class="word">Логин</b></p>
+                </label>
+                <input type="text" placeholder="Введите логин" name="uname" required>
+                <label for="psw">
+                    <p><b class="word">Пароль</b></p>
+                </label>
+                <input type="password" placeholder="Введите пароль" name="psw" required>
+                <p class="word">Я прочитал(а) и принимаю условия Пользовательского соглашения и Политики конфиденциальности персональных данных.</p>
+                <button type="submit" class="LOGINBTN1">
+                    <b class="loginbut">АВТОРИЗОВАТЬСЯ</b>
+                </button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> <b class="word">Запомнить меня</b>
+                </label>
+            </div>
+        </form>
+    </section>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const slider = new ChiefSlider('.slider', {
+            loop: false
+        });
+    });
+</script>
+</html>

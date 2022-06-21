@@ -1,0 +1,327 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 73%;
+    color: black;
+}
+nav {
+    width: 660px;
+    margin: 0 auto 30px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    transition: .5s linear;
+}
+.a1 {
+    color: white;
+    padding: 0;
+}
+.fa {
+    color: inherit;
+    padding-left: 10px;
+}
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.three ul {
+    justify-content: space-around;
+    display: flex
+}
+.three ul a {
+    color: black;
+}
+.three .submenu {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    background: white;
+    width: 235px;
+}
+.three ul li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+.btn1{
+    text-decoration: none;
+    color: black;
+}
+.btn2{
+    text-decoration: none;
+    color: black;
+}
+.btn3{
+    text-decoration: none;
+    color: black;
+}
+.photo1{   /*header_main__photo*/
+    width: 177px;
+    height: 124px;
+}
+.photos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 39%;
+    height: 30%;
+    margin: 10px;
+    margin-left:90px;
+    margin-right:90px;
+    letter-spacing: 1px;
+}
+.ili {
+    height: 16%;
+    font-size: 20px;
+}
+.btn{
+    font-size: 18px;
+    position: relative;
+    height: 53px;
+}
+.glow-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #4061B8 inset, 0 0 0 0 #4061B8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: .15s ease-in-out;
+}
+.glow-button:hover {
+    box-shadow: 0 0 10px 0 #4061B8 inset, 0 0 10px 4px #4061B8;
+    color: #4061B8;
+}
+.but{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 204px;
+}
+.block1{
+    height: 885px;
+    background-color: #4061B8;
+    display: flex;
+    flex-direction: column;
+}
+.tovar{
+    height: 570px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tovarbl{
+    height: 430px;
+    width: 72%;
+    background-color: white;
+    border-radius: 10px;
+}
+.glword{
+    font-size: 25px;
+    color: white;
+}
+.new{
+    height: 405px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.newbl{
+    height: 300px;
+    width: 72%;
+    background-color: white;
+    border-radius: 10px;
+}
+.block2{
+    height: 370px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.br{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 47px;
+    text-align: center;
+}
+.scale {
+    transition: 1s;
+    border-radius: 228px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+.scale:hover {
+    transform: scale(1.2);
+}
+.photos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+@media screen and (max-width: 1280px) {
+    .photo1 {
+        width: 141px;
+        height: 100px;
+    }
+    .header {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: auto;
+        margin-bottom: 12px;
+        width: 73%;
+        color: black;
+    }
+    .three ul a {
+        color: black;
+        width: 100%;
+    }
+    .btns {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        width: 35%;
+        height: 30%;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        letter-spacing: 1px;
+    }
+    .glow-button{
+        padding: 12px 17px;
+        margin: 2px 18px;
+        font-size: 14px;
+    }
+    .ili {
+        height: 10%;
+        font-size: 18px;
+    }
+    .tovarbl {
+        height: 444px;
+    }
+    .photos{
+        width: 86%;
+        height: 100%;
+    }
+    .scale{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .header {
+        width: 558px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btns {
+        width: 49%;
+    }
+
+    .glow-button {
+        display: none;
+    }
+
+    .ili {
+        display: none;
+    }
+    .carousel .thumb-wrapper1{
+        display: none;
+    }
+    .carousel .thumb-wrapper2{
+        display: none;
+    }
+    .carousel .thumb-wrapper3{
+        display: none;
+    }
+    .photos {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 290px;
+        width: 75%;
+    }
+    .scale {
+        transition: 1s;
+        border-radius: 228px;
+        display: flex;
+        width: 125px;
+        height: 125px;
+        border: 1px solid black;
+    }
+    .scale:hover {
+        transform: scale(1.2);
+    }
+    .block1{
+        height: 805px;
+        width: 558px;
+    }
+    .block2{
+        height: 288px;
+    }
+}

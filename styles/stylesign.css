@@ -1,0 +1,297 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+html body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 73%;
+    color: black;
+}
+nav {
+    width: 660px;
+    margin: 0 auto 30px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    transition: .5s linear;
+}
+.fa {
+    color: inherit;
+    padding-left: 10px;
+}
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.three ul {
+    justify-content: space-around;
+    display: flex
+}
+.three ul a {
+    color: black;
+}
+.three .submenu {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    background: white;
+    width: 235px;
+}
+.three ul li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+.btn1 {
+    text-decoration: none;
+    color: black;
+}
+.photo1{   /*header_main__photo*/
+    width: 177px;
+    height: 124px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 39%;
+    height: 30%;
+    margin: 10px;
+    margin-left:90px;
+    margin-right:90px;
+    letter-spacing: 1px;
+}
+.ili {
+    height: 16%;
+    font-size: 20px;
+}
+.btn{
+    font-size: 18px;
+    position: relative;
+    height: 53px;
+}
+.but{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 204px;
+}
+.glow-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #4061B8 inset, 0 0 0 0 #4061B8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: .15s ease-in-out;
+}
+.glow-button:hover {
+    box-shadow: 0 0 10px 0 #4061B8 inset, 0 0 10px 4px #4061B8;
+    color: #4061B8;
+}
+.block1{
+    background-color: #4061B8;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    width: 34%;
+    height: 66%;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: white;
+    color: #4061B8;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+}
+button:hover {
+    opacity: 0.8;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+.word{
+    color: white;
+    width: 50%;
+    letter-spacing: 1px;
+}
+.bold{
+    font-size: 20px;
+}
+.loginbut{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.register{
+    font-size: 30px;
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: center; 
+    color: white;
+    letter-spacing: 1px;
+}
+.aut{
+    font-size: 18px;
+    color: white;
+}
+.registrbut{
+    display: flex;
+    flex-direction: row;
+}
+.word3{
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 1280px) {
+    .block1{
+        width: 1280px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .photo1 {
+        width: 141px;
+        height: 100px;
+    }
+    .header {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: auto;
+        margin-bottom: 12px;
+        width: 73%;
+        color: black;
+    }
+    .three ul a {
+        color: black;
+        width: 100%;
+    }
+    .btns {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        width: 35%;
+        height: 30%;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        letter-spacing: 1px;
+    }
+    .glow-button{
+        padding: 12px 17px;
+        margin: 2px 18px;
+        font-size: 14px;
+    }
+    .ili {
+        height: 10%;
+        font-size: 18px;
+    }
+    .login{
+        width: 46%;
+        height: 94%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .block1{
+        width: 565px;
+        height: 694px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btns{
+        width: 61%;
+    }
+    .glow-button{
+        display: none;
+    }
+    .ili{
+        display: none;
+    }
+    .header{
+        width: 558px;
+        display: flex;
+        justify-content: center;
+    }
+    .login{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    input[type=text], input[type=password] {
+        width: 97%;
+    }
+}
+

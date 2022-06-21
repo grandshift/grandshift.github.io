@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles/stylebasket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+        $(".five li ul").hide();
+        $(".five li:has('.submenu')").hover(
+            function(){
+                $(".five li ul").stop().fadeToggle(300);}
+        );
+    </script>
+</head>
+<header class="header">
+    <a href="index.html"><img src="images/Logo.png" class="photo1"></a>
+    <div class="btns">
+        <nav class="three">
+            <ul class="topmenu">
+                <li><a href="" class="btn1">КАТАЛОГ<i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="catalog1.html">Аксессуары для рыбалки</a></li>
+                        <li><a href="catalog2.html">Лодки и моторы</a></li>
+                        <li><a href="catalog3.html">Удилища</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="btn2">НОВИНКИ</a></li>
+                <li><a href="basket.html" class="btn3">КОРЗИНА</a></li>
+    </div>
+    <div class="but">
+        <a href="sign.html" class="glow-button">Войти</a>
+        <p class="ili">или</p>
+        <a href="register.html" class="glow-button">Зарегистрироваться</a>
+    </div>
+</header>
+<body>
+    <div class="block1">
+        <div class="bl11">
+            <div class="shopposition">
+                <p class="shop">Интернет магазин/Корзина</p>
+            </div>
+            <section class="bl1">
+                <section class="word123">
+                    <div class="shopword"><p class="wordshop">КОРЗИНА</p></div>
+                </section>
+                <section class="word132">
+                    <div class="noneshop"><p class="shopnone">корзина пуста</p></div>
+                </section>
+                <section class="word321">
+                    <div class="asd">
+                        <img class="zamok" src="images/zamok.png">
+                        <p>Чтобы получить бонусы или воспользоваться скидками, <a href="">авторизуйтесь</a></p>
+                    </div>
+                </section>
+            </section>
+    </div>
+    <div class="bl22">
+        <section class="bl2">
+            <section class="block12">
+                <section class="word1">
+                    <p class="wr1">Итого к оплате:</p>
+                </section>
+                <section class="zero">
+                    <p class="wr2">0 р.</p>
+                </section>
+                <section class="word2">
+                    <p class="wr1">Без учёта стоимости доставки</p>
+                </section>
+            </section>
+            <div class="buttonposition">
+                <a href="" class="glow-button1">Оформить заказ</a>
+            </div>
+            <section class="">
+                <section class="wordd">
+                    <p class="wr3">Условия оплаты и доставки</p>
+                </section>
+                <section class="wordd1">
+                    <p class="wr3">Возврат и обмен товаров</p>
+                </section>
+                <section class="wordd2">
+                    <p class="wr3">Бонусная программа</p>
+                </section>
+            </section>
+        </section>
+    </div>
+</div>
+</body>
+</html>
